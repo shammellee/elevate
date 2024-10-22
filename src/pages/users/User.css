@@ -1,0 +1,142 @@
+.page--user {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-avatar {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  position: relative;
+  width: 200px;
+}
+.user-avatar:before {
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.user-details {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.user-name {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.user-metrics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.user-metric {
+  font-size: 1.6em;
+  line-height: 1.4;
+}
+
+.user-stats {
+  margin-top: 4em;
+}
+
+.user-section-title {
+  color: var(--text-light);
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.user-stat-chart {
+  display: flex;
+  height: 300px;
+  margin-top: 1.5em;
+}
+
+.user-stat {
+  --stat-radius: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.user-stat + .user-stat {
+  margin-left: 1em;
+}
+
+.user-stat-bar--max {
+  border: 2px solid #C9C9C9;
+  border-radius: var(--stat-radius);
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+  padding: 4px;
+  width: 70px;
+}
+
+.user-stat-bar--current {
+  background-color: blue;
+  border-radius: var(--stat-radius);
+  min-height: 60px;
+  transition: height 250ms ease-in-out;
+}
+
+.user-stat.writing .user-stat-bar--current {
+  background-color: #4379F2;
+}
+
+.user-stat.reading .user-stat-bar--current {
+  background-color: #6EC207;
+}
+
+.user-stat.math .user-stat-bar--current {
+  background-color: #FFEB00;
+}
+
+.user-stat.speaking .user-stat-bar--current {
+  background-color: #117554;
+}
+
+.user-stat-text {
+  line-height: 1.2;
+  text-align: center;
+}
+
+.user-stat-text + .user-stat-text {
+  margin-top: 0.5em;
+}
+
+.user-stat-level {
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  transition: background-color 250ms ease-in-out;
+}
+
+.user-stat-level--beginner {
+  background-color: #F07400;
+}
+
+.user-stat-level--advanced {
+  background-color: #006BEF;
+}
+
+.user-stat-level--expert {
+  background-color: #8B00EF;
+}
+

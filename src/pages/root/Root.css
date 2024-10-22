@@ -1,0 +1,70 @@
+.page--root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.root-sidebar {
+  background-color: #EEF4F6;
+}
+
+.root-sidebar-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0.7em 1em;
+}
+
+.root-sidebar-nav {
+  min-width: 300px;
+  padding: 0 1em 1em;
+}
+
+.user-list-item + .user-list-item {
+  margin-top: 1em;
+}
+
+.user-list-item-link {
+  align-items: center;
+  border-radius: 5px;
+  color: var(--text);
+  display: flex;
+  padding: 0.6em 1em;
+  text-decoration: none;
+  transition: all 250ms ease-out;
+}
+
+.user-list-item-link:not(.active):hover {
+  background-color: #D2E0E4;
+}
+
+.user-list-item-link:not(.active):active {
+  background-color: #B6CDD3;
+}
+
+.user-list-item-link.active {
+  background-color: #0063FF;
+  color: #FFFFFF;
+}
+
+.user-list-item-avatar {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  height: 40px;
+  width: 40px;
+}
+
+.user-list-item-name {
+  margin-left: 1em;
+}
+
+.root-content {
+  flex: 1 0 auto;
+  padding: 2em;
+}
+
+.root-content-title {
+  color: var(--text-light);
+  font-size: 2em;
+}
+
