@@ -27,6 +27,7 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-left: 2em;
 }
 
@@ -125,7 +126,7 @@
   font-size: 0.8em;
   letter-spacing: 0.05em;
   padding: 5px 14px;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms;
 }
 
 .user-stat-level--beginner {

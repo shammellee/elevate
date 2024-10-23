@@ -59,8 +59,14 @@
 }
 
 .root-content {
+  display: flex;
   flex: 1 0 auto;
   padding: 2em;
+}
+
+.root-content.no-user-selected {
+  align-items: center;
+  justify-content: center;
 }
 
 .root-content-title {

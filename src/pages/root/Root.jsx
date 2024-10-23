@@ -44,7 +44,7 @@ export default function Root() {
             </ul>
           </nav>
         </aside>
-        <main className='root-content'>
+        <main className={`root-content ${isRoot ? 'no-user-selected' : ''}`}>
           {isRoot ? (
               <h2 className='root-content-title'>Select a user to see their stats</h2>
             ) : (
