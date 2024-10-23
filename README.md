@@ -1,5 +1,7 @@
 # Elevate Exercise
 
+![screenshot](img/screenshot.png)
+
 ## Add Credentials to API File
 
 1. Replace `<user_id>` with the user id on [line 3 of src/api.js](https://github.com/shammellee/elevate/blob/main/src/api.js#L3).
